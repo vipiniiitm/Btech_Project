@@ -1,0 +1,35 @@
+\chapter{INTRODUCTION AND LITERATURE SURVEY}
+This chapter includes the details of wireless ad hoc networks, fuzzy theory, our objective, platform used to implement the
+project and literatures review related to work done in this field.
+\section{INTRODUCTION}
+In this chapter we are going to focus on introductions on various aspects of our thesis .We are going to explain about Sentiment Analysis , Twitter Sentiment Analysis,  various tools of Python which are useful for Sentiment Analysis and Natural Language Toolkit (NLTK). Then we will describe the objective of our thesis.  Finally we will analyze the importance of Sentiment Analysis and its various application in different fields of interest .
+\subsection{Sentiment analysis}
+Sentiment analysis is that the domain of study of examine peoples thoughts, sentiments, evaluations, mind-set, and feeling from written language. Sentiment analysis systems are utilized in almost each content as a result of thoughts are vital to the majority human activities. They’re key influencers of our behaviours .Sentiment analysis uses tongue process and text analysis to spot and extract data from a few specific area of interest. Attributable to massive use of the social media such as blogs and social networking sites like Twitter the interest in sentiment analysis has raised to the next extent. There are several problems in Sentiment analysis. The first is that an opinion word that’s thought-about to be positive in one situation could also be taken negative in another scenario. The second challenge is that folks don’t continually reveal their opinions in the same method.
+\subsection{Twitter Sentiment analysis}
+Twitter Sentiment Analysis is the process of determining whether a tweet is positive, negative or neutral \cite{edtr1}. It can be used to identify people's opinion towards a brand or public action through the use of variables such as context, tone, emotion, etc. Researcher  can use sentiment analysis to find out public opinion of any epidemic or health related issues . Health department  can also use this analysis to gather critical knowledge of awareness level  in public with respect to any particular epidemic (Zika Virus in this case).
+\subsection{Python}
+We have used programming language Python for our thesis which is high level and  dynamic programming language . Python libraries have grown significantly in last 10 years and some of which are specifically designed for data analysis \cite{edtr2}. We have used Python 3.6 version. There are various open source libraries are available which is compatible with Python 3.6 .
+\par Python is a simple programming language but its simplicity does not limit its versatility. There are other programming languages for data analysis such as 'R' and 'MATLAB' but they are not as flexible as python .
+ \subsection{Natural Language Toolkit (NLTK)}
+ Natural Language Toolkit (NLTK) is a Python library which is distributed under the GPL open source license and it has been rewritten multiple times in order to take advantage of recent development in Python language \cite{edtr3}. NLTK is a group of multiple python scripts which is used for data classification , text processing and tokenization. This library plays a major role to  obtain sentiment from text data.
+\par There are many functions which are very useful for data pre-processing .These functions are used to preprocess the twitter  data to make them fit for extracting features. NLTK works well with various machine learning algorithm which are used for Sentiment classification.
+\par We used Python as main programming language in which we have written our script for fetching tweets as well as sentiment analysis. NLTK is the library which does the most important task to classify text into either positive or negative or neutral classes.
+\subsection{Naive Bayes Classifier}
+Task of supervised machine learning is to infer a function from tagged trainning samples.  We are going to use Naive Bayes classifier which is a classifier with probabilistic output. In such type of classifiers with probabilistic output we have option to reject with a probability distribution if we are not sure about prediction result and hence we can pass it for manual check up \cite{edtr4}.\\
+Suppose , $x_1$ to $x_n$ is a dependent vectors and there is a class variable y. So according to Bayes' probability theorem:
+\begin{equation}
+  P(y|x_1,.....,x_n)=\frac{P(y)P(x_1,....,x_n|y)}{x_1,....,x_n}
+\end{equation}
+According to independence assumption :
+\begin{equation}
+  P(x_i|y, x_1,....,x_(i-1),x_(i+1),...,x_n)=P(x_i|y),
+\end{equation}
+For each 'i' , this becomes 
+\begin{equation}
+ 
+\end{equation}
+ Since P(x1,......, xn)  is constant on provided input , so we have classification rule as:
+ \begin{equation}
+  
+\end{equation}
+To  evaluate we can use MAP (Maximum A Posterior) estimation P(y) and  P(xi|y) ; the P(y) of class 'y' is relative frequency in sample [5]. 
